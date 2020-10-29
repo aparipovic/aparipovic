@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="Contact.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+<title>Gallery</title>
+</head>
+<body>
+    <header class="fix">
+			<div class="nav-area">
+				<div class="logo">Gallery</div>
+				
+				<ul class="menu-area">
+					<li><a href="./../index.html">Home</a></li>
+					<li class="active"><a href="Contact/Contact.html">Contact</a></li>
+				</ul>
+			</div>
+    </header>
+
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="Background.jpg" class="square" alt=""/>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">I hope you liked the pictures! If you have any questions, contact me.</p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="email.png" class="icon" alt="">
+                        <p>a.paripovic@hotmail.com</p>
+                    </div>
+
+                    <div class="information">
+                        <img src="location.png" class="icon" alt="">
+                        <p>Linz, Austria</p>
+                    </div>
+
+                    <div class="information">
+                        <img src="phone.png" class="icon" alt="">
+                        <p>123-456-789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle one"></span>
+
+            <form action="Contact.html" autocomplete="off">
+                <h3 class="title">Contact me</h3>
+                <div class="input-container">
+                    <input type="text" name="name" class="input"/>
+                    <label for="">Username</label>
+                    <span>Username</span>
+                </div>
+
+                <div class="input-container">
+                    <input type="email" name="email" class="input"/>
+                    <label for="">Email</label>
+                    <span>Email</span>
+                </div>
+
+                <div class="input-container">
+                    <input type="tel" name="phone" class="input"/>
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                </div>
+
+                <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                </div>
+                <input type="submit" value="Send" class="btn"/>
+            </form>
+           </div>
+        </div>
+    </div>
+    <script src="Contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/** CSS-Stylesheet
+*	author: Ana Paripovic
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto, sans-serif";
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    background-color:white;
+}
+
+.gallery {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A5C3DA;
+    color:white;
+}
+
+.description h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+.description p {
+    font-size: 20px;
+}
+
+.gallery-highlight {
+    width: 80%;
+    height: 50%;
+}
+
+.preview {
+    display: flex;
+    width: 80%;
+    border: 2px solid#B3CDE1;
+}
+
+.preview img {
+    flex-grow: 1;
+    height: 100px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+img.active {
+    opacity: 1;
+}
+
+.fix {
+	clear: both;
+	overflow: hidden;
+}
+
+.nav-area {
+	background: rgba(0, 0, 0, 0.6);
+	height: 60px;
+	position: absolute;
+	width: 100%;
+}
+
+.logo {
+	margin: 10px 50px;
+	height: 60px;
+	float: left;
+	color: #fff;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.menu-area {
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+
+.menu-area li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.menu-area li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+
+.menu-area li.active a {
+	color:  #A5C3DA;
+}
+
+.menu-area li a:hover {
+	color:  #A5C3DA;
+}
