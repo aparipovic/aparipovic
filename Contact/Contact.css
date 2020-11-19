@@ -52,11 +52,15 @@ body, input, textarea {
 }
 
 .menu-area li.active a {
-	color:   #A5C3DA;
+	color:  #A5C3DA;
 }
 
 .menu-area li a:hover {
 	color:  #A5C3DA;
+}
+
+header {
+  margin-bottom: 5%;
 }
 
 .container {
