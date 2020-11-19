@@ -111,3 +111,9 @@ img.active {
 .menu-area li a:hover {
 	color:  #A5C3DA;
 }
+
+.Pic {
+    width: 30vh;
+    margin-top: 30%;
+    margin-left: 40%;
+}
