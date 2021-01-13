@@ -1,39 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
-<link rel="stylesheet" href="./style.css" />
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
-<title>Gallery</title>
+<title>Travel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width. initial scale=1.0">
+<link rel="icon" href="media/favicon.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="fix">
-			<div class="nav-area">
-				<div class="logo">Gallery</div>
-				
-				<ul class="menu-area">
-					<li class="active"><a href="">Home</a></li>
-                    <li><a href="Contact/Contact.html">Contact</a></li>
-                    <li><a href="Img.html">Image</a></li>
-                    <li><a href="ResponsiveImg.html">Responsive Imageset</a></li>
-				</ul>
-			</div>
-	</header>
-    <section>
-        <div class="description">
-            <h1>Welcome</h1>
-            <p>Thank you for visiting this site!</p>
-        </div>
-        <div class="gallery">
-            <img class="gallery-highlight" src="img/Pic1-big.jpg" alt="Picture 1"/>
-        <div class="preview">
-          <img src="./img/Pic1-small.jpg" class="active" alt="Picture1" />
-          <img src="./img/Pic2-small.jpg" alt="Picture2" />
-          <img src="./img/Pic3-small.jpg" alt="Picture3" />
-        </div>
+    <header>
+        <a href="#" class="logo">Travel<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#deals" onclick="toggleMenu();">Deals</a></li>
+            <li><a href="#staff" onclick="toggleMenu();">Staff</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>A more rewarding way to travel</h2>
+            <p>Remember that happiness is a way of travel, not a destination.</p>
+            <a href="#deals" class="btn">Our Deals</a>
         </div>
     </section>
-    <script src="app.js"></script>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>We started this company because we noticed that people love to travel but there aren't a lot companies, who give them the feeling 
+                    that they can travel safe and cheap. But Travel. enables you to travel where you want and when you want and we guarantee you that your trip is going to 
+                    be unforgettable!
+                </p>
+            </div>
+
+            <div class="col50">
+                <div class="imgBx">
+                    <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                        media/img1-set/img1_om232h_c_scale,w_200.jpg 200w,
+                        media/img1-set/img1_om232h_c_scale,w_517.jpg 517w,
+                        media/img1-set/img1_om232h_c_scale,w_749.jpg 749w,
+                        media/img1-set/img1_om232h_c_scale,w_902.jpg 902w,
+                        media/img1-set/img1_om232h_c_scale,w_1041.jpg 1041w,
+                        media/img1-set/img1_om232h_c_scale,w_1169.jpg 1169w,
+                        media/img1-set/img1_om232h_c_scale,w_1269.jpg 1269w,
+                        media/img1-set/img1_om232h_c_scale,w_1371.jpg 1371w,
+                        media/img1-set/img1_om232h_c_scale,w_1400.jpg 1400w"
+                        src="media/img1-set/img1_om232h_c_scale,w_1041.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="deals">
+        <div class="title">
+            <h2 class="titleText">Our <span>D</span>eals</h2>
+            <p>Here are some countries, where most of our customers travel</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_200.jpg 200w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_353.jpg 353w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_463.jpg 463w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_557.jpg 557w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_641.jpg 641w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_719.jpg 719w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_797.jpg 797w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_869.jpg 869w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_929.jpg 929w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_999.jpg 999w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_1070.jpg 1070w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_1130.jpg 1130w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_1198.jpg 1198w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_1263.jpg 1263w,
+                        media/deal1-set/deal1_cr1xpk_c_scale,w_1280.jpg 1280w"
+                        src="media/deal1-set/deal1_cr1xpk_c_scale,w_1280.jpg"
+                        alt="">
+                </div>
+                <div class="text">
+                    <h3>Croatia</h3>
+                </div>
+            </div>
+
+                <div class="box">
+                    <div class="imgBx">
+                        <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                            media/deal2-set/deal2_zkaktr_c_scale,w_200.jpg 200w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_372.jpg 372w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_497.jpg 497w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_603.jpg 603w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_690.jpg 690w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_770.jpg 770w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_842.jpg 842w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_915.jpg 915w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_979.jpg 979w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_1043.jpg 1043w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_1107.jpg 1107w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_1166.jpg 1166w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_1229.jpg 1229w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_1258.jpg 1258w,
+                            media/deal2-set/deal2_zkaktr_c_scale,w_1280.jpg 1280w"
+                            src="media/deal2-set/deal2_zkaktr_c_scale,w_1280.jpg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Indonesia</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="imgBx">
+                        <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_200.jpg 200w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_354.jpg 354w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_471.jpg 471w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_568.jpg 568w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_658.jpg 658w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_746.jpg 746w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_817.jpg 817w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_886.jpg 886w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_950.jpg 950w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_1021.jpg 1021w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_1081.jpg 1081w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_1142.jpg 1142w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_1206.jpg 1206w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_1264.jpg 1264w,
+                            media/deal3-set/deal3_lrbxdv_c_scale,w_1280.jpg 1280w"
+                            src="media/deal3-set/deal3_lrbxdv_c_scale,w_1280.jpg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h3>France</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="imgBx">
+                        <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                                media/deal4-set/deal4_shx1hy_c_scale,w_200.jpg 200w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_375.jpg 375w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_505.jpg 505w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_622.jpg 622w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_717.jpg 717w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_800.jpg 800w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_884.jpg 884w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_962.jpg 962w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_1036.jpg 1036w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_1108.jpg 1108w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_1181.jpg 1181w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_1255.jpg 1255w,
+                                media/deal4-set/deal4_shx1hy_c_scale,w_1280.jpg 1280w"
+                            src="media/deal4-set/deal4_shx1hy_c_scale,w_1280.jpg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h3>USA</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="imgBx">
+                        <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                        media/deal5-set/deal5_dshmli_c_scale,w_200.jpg 200w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_372.jpg 372w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_503.jpg 503w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_605.jpg 605w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_690.jpg 690w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_771.jpg 771w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_843.jpg 843w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_916.jpg 916w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_979.jpg 979w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_1039.jpg 1039w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_1103.jpg 1103w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_1164.jpg 1164w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_1217.jpg 1217w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_1276.jpg 1276w,
+                        media/deal5-set/deal5_dshmli_c_scale,w_1280.jpg 1280w"
+                        src="media/deal5-set/deal5_dshmli_c_scale,w_1280.jpg"
+                        alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Island</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="imgBx">
+                        <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                            media/deal6-set/deal6_hxot3o_c_scale,w_200.jpg 200w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_355.jpg 355w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_470.jpg 470w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_573.jpg 573w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_661.jpg 661w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_736.jpg 736w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_811.jpg 811w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_884.jpg 884w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_955.jpg 955w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_1019.jpg 1019w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_1083.jpg 1083w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_1147.jpg 1147w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_1210.jpg 1210w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_1270.jpg 1270w,
+                            media/deal6-set/deal6_hxot3o_c_scale,w_1280.jpg 1280w"
+                            src="media/deal6-set/deal6_hxot3o_c_scale,w_1280.jpg"
+                            alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Switzerland</h3>
+                    </div>
+                </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn">View all</a>
+        </div>
+    </section>
+
+    <section class="staff" id="staff">
+        <div class="title">
+            <h2 class="titleText">Our Staff <span>M</span>embers</h2>
+            <p>Here are our hardworking employees, who we all really appreciate</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_200.jpg 200w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_447.jpg 447w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_641.jpg 641w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_784.jpg 784w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_923.jpg 923w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_1055.jpg 1055w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_1158.jpg 1158w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_1264.jpg 1264w,
+                        media/staff1-set/staff1_tvz1aa_c_scale,w_1280.jpg 1280w"
+                        src="media/staff1-set/staff1_tvz1aa_c_scale,w_1280.jpg"
+                        alt="">
+                </div>
+                <div class="text">
+                    <h3>Casey Smith & Michael Williams</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_200.jpg 200w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_394.jpg 394w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_544.jpg 544w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_673.jpg 673w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_796.jpg 796w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_898.jpg 898w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_991.jpg 991w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_1098.jpg 1098w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_1192.jpg 1192w,
+                            media/staff2-set/staff2_j4f6ns_c_scale,w_1280.jpg 1280w"
+                            src="media/staff2-set/staff2_j4f6ns_c_scale,w_1280.jpg"
+                            alt="">
+                </div>
+                <div class="text">
+                    <h3>Frederick Hernandez</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                        media/staff3-set/staff3_hc2gza_c_scale,w_200.jpg 200w,
+                        media/staff3-set/staff3_hc2gza_c_scale,w_528.jpg 528w,
+                        media/staff3-set/staff3_hc2gza_c_scale,w_793.jpg 793w,
+                        media/staff3-set/staff3_hc2gza_c_scale,w_993.jpg 993w,
+                        media/staff3-set/staff3_hc2gza_c_scale,w_1185.jpg 1185w,
+                        media/staff3-set/staff3_hc2gza_c_scale,w_1280.jpg 1280w"
+                        src="media/staff3-set/staff3_hc2gza_c_scale,w_1280.jpg"
+                        alt="">
+                </div>
+                <div class="text">
+                    <h3>Leon Ha</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img sizes="(max-width: 1280px) 100vw, 1280px" srcset="
+                            media/staff4-set/staff4_ihnzgx_c_scale,w_200.jpg 200w,
+                            media/staff4-set/staff4_ihnzgx_c_scale,w_555.jpg 555w,
+                            media/staff4-set/staff4_ihnzgx_c_scale,w_822.jpg 822w,
+                            media/staff4-set/staff4_ihnzgx_c_scale,w_1044.jpg 1044w,
+                            media/staff4-set/staff4_ihnzgx_c_scale,w_1243.jpg 1243w,
+                            media/staff4-set/staff4_ihnzgx_c_scale,w_1280.jpg 1280w"
+                            src="media/staff4-set/staff4_ihnzgx_c_scale,w_1280.jpg"
+                            alt="">
+                </div>
+                <div class="text">
+                    <h3>Lilly Jackson</h3>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="title white">
+        <h2 class="titleText">They <span>S</span>aid About Us</h2>
+        <p>Here you can see some feedback customers gave us</p>
+    </div>
+    <div class="content">
+        <div class="box">
+            <div class="imgBx">
+                <img src="media/test1.jpg">
+            </div>
+            <div class="text">
+                <p>Luxury, perfect service, great location! 
+                    The staff is very attentive and they care a lot about each and every client. It was the trip of 
+                    our life! A big thank you to you guys because you helped Frank to propse to me next to the Eiffel Tower!:)
+                </p>
+                <h3>George</h3>
+            </div> 
+        </div>
+
+        <div class="box">
+            <div class="imgBx">
+                <img src="media/test2.jpg">
+            </div>
+            <div class="text">
+                <p>Amazing hotel in a beautiful lake setting! We spent two nights just to chill and do some cross-country skiing 
+                    (start was walking distance from the hotel). Great restaurant, service and amazing spa area. Definitely will book a trip at this company again! 
+                    </p>
+                <h3>Family Miller</h3>
+            </div> 
+        </div>
+
+        <div class="box">
+            <div class="imgBx">
+                <img src="media/test3.jpg">
+            </div>
+            <div class="text">
+                <p>We booked our trip through travel. and we are more than happy! Great service, great breakfasts and a good supportive team willing to help. We definitely recommend this to everyone and we'll also book our next trip here!! </p>
+                <h3>Mr. & Mrs. Harly</h3>
+            </div> 
+        </div>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>Please feel free to leave us a message and give us a feedback! We love to hear your opinion!</p>
+        </div>
+        <div class="contactForm">
+           <h3>Send Message</h3>
+           <div class="inputBox">
+               <input type="text" placeholder="Name">
+           </div> 
+           <div class="inputBox">
+            <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright 2020 Ana Paripovic. All Right Reserved</p>
+    </div>
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
